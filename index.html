@@ -7,11 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN" />
+
+  <link rel="stylesheet" href="./css/destyle.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
   <title>ブログ</title>
 </head>
 
 <body>
-  <iframe src="./parts/side.html" width=”200″ height=”100″></iframe>
+  <div id="all">
+    <iframe src="./parts/header.html" id="header"></iframe>
+
+    <div class="wrap">
+
+      <div id="contents">
+        <ul class="tab">
+          <li><a href="">#&nbsp;デザイン</a></li>
+          <li><a href="">#&nbsp;ウェブ</a></li>
+          <li><a href="">#&nbsp;レタッチ</a></li>
+        </ul>
+        <div class="list_box">
+          <ul class="list-item">
+            <li class="item">
+              <a href="">
+                <figure class="item-figure"><img src="./img/img.png" alt=""></figure>
+                <p class="item-ttl">Photoshop使い方</p>
+                <p class="item-txt">フォントの勉強　フォントの勉強フォントの勉強フォントの勉強フォントの勉強フォントの勉強</p>
+              </a>
+            </li>
+            <li class="item"><a href="">
+                <figure class="item-figure"><img src="./img/img.png" alt=""></figure>
+                <p class="item-ttl">Photoshop使い方</p>
+                <p class="item-txt">フォントの勉強　フォントの勉強フォントの勉強フォントの勉強フォントの勉強フォントの勉強</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <figure class="item-figure"><img src="./img/img.png" alt=""></figure>
+                <p class="item-ttl">Photoshop使い方</p>
+                <p class="item-txt">フォントの勉強　フォントの勉強フォントの勉強フォントの勉強フォントの勉強フォントの勉強</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <figure class="item-figure"><img src="./img/img.png" alt=""></figure>
+                <p class="item-ttl">Photoshop使い方</p>
+                <p class="item-txt">フォントの勉強　フォントの勉強フォントの勉強フォントの勉強フォントの勉強フォントの勉強</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <iframe src="./parts/side.html" id="side"></iframe>
+    </div>
+
+    <iframe src="./parts/footer.html" id="footer"></iframe>
+  </div>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
