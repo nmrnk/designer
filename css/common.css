@@ -14,8 +14,11 @@
 #header {
   width: 100%;
   height: 15vw;
-  max-height: 65px;
+  max-height: 85px;
   background: #fff;
+}
+.header_logo h1 {
+  margin: 0;
 }
 a.header_logo {
   display: block;
@@ -24,7 +27,7 @@ a.header_logo {
 }
 @media screen and (min-width: 767px) {
   a.header_logo {
-    max-width: 150px;
+    max-width: 190px;
   }
 }
 /* パンクズ */
@@ -32,6 +35,9 @@ a.header_logo {
   width: 100%;
   background: #e5e5e5;
   padding: 7px 10px;
+}
+.bread_clumb a.active {
+  font-weight: bold;
 }
 .bread_list {
   display: flex;
