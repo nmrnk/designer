@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
 #all {
   background: #f5f0f4;
 }
@@ -7,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  margin-bottom: 30px;
 }
 
 .tab li {
@@ -18,9 +22,7 @@
   text-align: center;
   font-weight: bold;
 }
-.list_box {
-  margin-top: 30px;
-}
+
 .list-item {
   display: flex;
   flex-flow: row wrap;
@@ -46,6 +48,36 @@
   font-size: 12px;
   margin: 10px 0;
 }
+.item-date {
+  text-align: right;
+  color: #828282;
+  font-weight: bold;
+  font-size: 12px;
+}
+.topics {
+  text-align: center;
+  margin: 0 auto 30px;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  letter-spacing: 0.1em;
+}
+.topics::before,
+.topics::after {
+  content: '';
+  width: 40%;
+  height: 2px;
+  display: inline-block;
+  background: #ccc;
+  position: absolute;
+  top: 4px;
+}
+.topics::before {
+  left: 0;
+}
+.topics::after {
+  right: 0;
+}
 @media screen and (min-width: 767px) {
   .item {
     width: calc((100% / 2) - 10px);
@@ -53,5 +85,12 @@
   }
   .item-txt {
     font-size: 14px;
+  }
+  .item-date {
+    font-size: 14px;
+  }
+  .topics::before,
+  .topics::after {
+    width: 43%;
   }
 }

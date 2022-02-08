@@ -8,6 +8,15 @@
  
 ---------------------------------------------*/
 
+.item-figure {
+  overflow: hidden;
+}
+.item-figure img {
+  transition: 0.2s ease;
+}
+a:hover .item-figure img {
+  transform: scale(1.05);
+}
 /*---------------------------------------------
 1 header
 ---------------------------------------------*/
@@ -26,10 +35,31 @@ a.header_logo {
   max-width: 120px;
   margin: 0 auto;
 }
+.header2 a.header_logo {
+  margin: 20px auto 0;
+}
+.mgB30 {
+  margin-bottom: 20px;
+}
+.dNoMb {
+  display: none;
+}
 @media screen and (min-width: 767px) {
   a.header_logo {
     max-width: 190px;
     margin: 20px auto;
+  }
+  .header2 a.header_logo {
+    margin: 25px auto 0;
+  }
+  .mgB30 {
+    margin-bottom: 30px;
+  }
+  .dNoPc {
+    display: none;
+  }
+  .dNoMb {
+    display: block;
   }
 }
 /* パンクズ */
@@ -48,6 +78,9 @@ a.header_logo {
 }
 .bread_item a {
   font-size: 12px;
+}
+.bread_item a.active {
+  font-weight: bold;
 }
 .bread_item {
   margin-right: 10px;
@@ -83,7 +116,7 @@ img {
 }
 
 #contents {
-  max-width: 740px;
+  max-width: 800px;
 }
 .tab li a {
   display: block;
@@ -94,7 +127,7 @@ img {
   .wrap {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
     margin: 70px auto;
   }
 }
@@ -110,11 +143,14 @@ img {
 .side_box {
   padding: 10px;
 }
-.side_list-ttl {
+.side_list-ttl a {
   border: 2px solid #333;
+  display: block;
   padding: 5px;
   font-weight: bold;
   text-align: center;
+  color: #000;
+  text-decoration: none;
 }
 .side_list {
   list-style: none;
@@ -139,7 +175,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   #side {
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 /*---------------------------------------------
@@ -160,5 +196,154 @@ img {
 @media screen and (min-width: 767px) {
   .footer_copy {
     font-size: 14px;
+  }
+}
+
+/*---------------------------------------------
+page
+---------------------------------------------*/
+
+.page #contents {
+  background: #fff;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  line-height: 1.6;
+}
+.page_txt {
+  line-height: 2;
+}
+.page_date {
+  color: #828282;
+  margin: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+}
+.page_index {
+  width: calc(100% - 20px);
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.page_index_ttl {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background: #7196bd;
+  color: #fff;
+  padding: 5px 0;
+}
+.page_index_list {
+  padding: 3px 20px;
+}
+.page_index_item a {
+  display: block;
+  margin-bottom: 10px;
+}
+.page_index_item a:hover {
+  opacity: 0.7;
+}
+.page_section {
+  width: calc(100% - 20px);
+  margin: 10px auto;
+}
+.page_ttl {
+  background: #ebebeb;
+  font-size: 18px;
+  padding: 10px 10px 10px 20px;
+  margin: 30px 0 20px;
+  font-weight: bold;
+  position: relative;
+}
+.page_ttl::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: #7196bd;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page_figure {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.page_box {
+  margin: 20px auto;
+  padding: 20px 20px 1px;
+  background: #f3f3f3;
+}
+span.color {
+  color: #ff6f6f;
+  font-weight: bold;
+}
+p span.bold {
+  font-weight: bold;
+}
+.list {
+  margin-bottom: 40px;
+}
+.list dt {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  margin-left: 6px;
+}
+.list dt::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 5px;
+  background: #7196bd;
+  position: relative;
+  top: -5px;
+  left: -6px;
+}
+span.mkYL {
+  background: linear-gradient(rgba(255, 255, 255, 0) 40%, #f7fd9b 70%);
+}
+@media screen and (min-width: 767px) {
+  .page #contents {
+    margin-bottom: 70px;
+  }
+  .page_txt {
+    font-size: 17px;
+  }
+  .page_date {
+    font-size: 14px;
+  }
+  .page_index {
+    margin: 30px auto;
+  }
+  .page_lead {
+    width: calc(100% - 30px);
+    margin: 30px auto;
+  }
+  .page_section {
+    width: calc(100% - 100px);
+    margin: 30px auto;
+  }
+  .page_ttl {
+    margin: 50px auto 20px;
+  }
+  .page_figure {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .page_box {
+    margin: 30px auto;
+    padding: 30px 30px 1px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .page .wrap {
+    width: 100%;
+    margin: 0;
   }
 }
