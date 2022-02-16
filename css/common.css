@@ -23,6 +23,22 @@ body {
 a:hover .item-figure img {
   transform: scale(1.05);
 }
+.soon {
+  position: relative;
+  overflow: hidden;
+}
+.soon::before {
+  content: 'comming soon';
+  background: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 0;
+}
 /*---------------------------------------------
 1 header
 ---------------------------------------------*/
@@ -242,6 +258,7 @@ page
   color: #fff;
   padding: 5px 0;
 }
+
 .page_index_list {
   padding: 3px 20px;
 }
@@ -256,7 +273,7 @@ page
   width: calc(100% - 20px);
   margin: 10px auto;
 }
-.page_ttl {
+h2.page_ttl {
   background: #ebebeb;
   font-size: 18px;
   padding: 10px 10px 10px 20px;
@@ -264,7 +281,7 @@ page
   font-weight: bold;
   position: relative;
 }
-.page_ttl::before {
+h2.page_ttl::before {
   content: '';
   display: inline-block;
   width: 5px;
@@ -274,17 +291,42 @@ page
   top: 0;
   left: 0;
 }
+h3.page_ttl-sub {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 25px 0 5px 6px;
+}
+h3.page_ttl-sub::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 5px;
+  background: #7196bd;
+  position: relative;
+  top: -5px;
+  left: -6px;
+}
+h4.page_ttl-sub2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  /* color: #7196bd; */
+}
 .page_figure {
   width: 100%;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 15px auto;
   border: 1px solid #ccc;
-  padding: 10px;
+  /* padding: 10px; */
 }
 .page_box {
   margin: 20px auto;
-  padding: 20px 20px 1px;
+  padding: 15px 10px 1px;
   background: #f3f3f3;
+}
+.page_box_ttl {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.1em;
 }
 span.color {
   color: #ff6f6f;
@@ -311,8 +353,11 @@ p span.bold {
   top: -5px;
   left: -6px;
 }
-span.mkYL {
-  background: linear-gradient(rgba(255, 255, 255, 0) 40%, #f7fd9b 70%);
+span.mkBL {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 40%,
+    rgba(113, 150, 189, 0.3) 70%
+  );
 }
 @media screen and (min-width: 767px) {
   .page #contents {
@@ -320,6 +365,9 @@ span.mkYL {
   }
   .page_txt {
     font-size: 17px;
+  }
+  .page_box .page_txt {
+    font-size: 16px;
   }
   .page_date {
     font-size: 14px;
@@ -339,8 +387,8 @@ span.mkYL {
     margin: 50px auto 20px;
   }
   .page_figure {
-    width: 80%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 20px auto;
   }
   .page_box {
     margin: 30px auto;

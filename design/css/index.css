@@ -82,7 +82,7 @@ mv
 /*---------------------------------------------
 layout
 ---------------------------------------------*/
-.page_figure {
+#layout .page_figure {
   background: #fdf5ea;
 }
 
@@ -94,4 +94,19 @@ copyright
 }
 #copyright .page_box li {
   margin-bottom: 10px;
+}
+/*---------------------------------------------
+font
+---------------------------------------------*/
+.rome .page_box_ttl {
+  color: #ab4545;
+}
+.jp .page_box_ttl {
+  color: #3c72ab;
+}
+.rome.page_box {
+  background: #fff1f1;
+}
+.jp.page_box {
+  background: #ebeff9;
 }
