@@ -254,7 +254,7 @@ page
   text-align: center;
   font-size: 18px;
   margin-bottom: 10px;
-  background: #7196bd;
+  background: #3b9a9c;
   color: #fff;
   padding: 5px 0;
 }
@@ -286,7 +286,7 @@ h2.page_ttl::before {
   display: inline-block;
   width: 5px;
   height: 100%;
-  background: #7196bd;
+  background: #3b9a9c;
   position: absolute;
   top: 0;
   left: 0;
@@ -301,7 +301,7 @@ h3.page_ttl-sub::before {
   display: inline-block;
   width: 15px;
   height: 5px;
-  background: #7196bd;
+  background: #3b9a9c;
   position: relative;
   top: -5px;
   left: -6px;
@@ -309,7 +309,7 @@ h3.page_ttl-sub::before {
 h4.page_ttl-sub2 {
   font-size: 1.1rem;
   font-weight: bold;
-  /* color: #7196bd; */
+  /* color: #3b9a9c; */
 }
 .page_figure {
   width: 100%;
@@ -348,7 +348,7 @@ p span.bold {
   display: inline-block;
   width: 15px;
   height: 5px;
-  background: #7196bd;
+  background: #3b9a9c;
   position: relative;
   top: -5px;
   left: -6px;
