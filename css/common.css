@@ -328,6 +328,12 @@ h4.page_ttl-sub2 {
   margin-top: 20px;
   font-size: 1.1em;
 }
+.page_box li {
+  margin-bottom: 10px;
+}
+.page_box li:last-child {
+  margin-bottom: 15px;
+}
 span.color {
   color: #ff6f6f;
   font-weight: bold;
@@ -393,6 +399,9 @@ span.mkBL {
   .page_box {
     margin: 30px auto;
     padding: 30px 30px 1px;
+  }
+  .page_box li:last-child {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 766px) {

@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*---------------------------------------------
+mv
+---------------------------------------------*/
+#mv {
+  background: #3b9a9c;
+}
+.mv_txt {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 30px 0;
+}
+.mv_txt-lead {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media screen and (min-width: 767px) {
+  .mv_txt {
+    font-size: 28px;
+  }
+  .mv_txt-lead {
+    font-size: 16px;
+  }
+}
+
+#all {
+  background: #f5f0f4;
+}
+
+.tab li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 7px;
+  width: calc((100% / 3) - 10px);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-weight: bold;
+}
+
+.list-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.item {
+  background: #fff;
+  width: calc((100% / 2) - 6px);
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+.item a {
+  display: block;
+}
+.item-ttl {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.item-txt {
+  line-height: 1.6;
+  font-size: 12px;
+  margin: 10px 0;
+}
+@media screen and (min-width: 767px) {
+  .item {
+    width: calc((100% / 2) - 10px);
+    margin-bottom: 30px;
+  }
+  .item-txt {
+    font-size: 14px;
+  }
+}
+
+/*---------------------------------------------
+layout
+---------------------------------------------*/
+#layout .page_figure {
+  background: #fff;
+  padding: 15px;
+}
+@media screen and (min-width: 767px) {
+  #layout .page_figure {
+    padding: 20px;
+  }
+}
+
+/*---------------------------------------------
+copyright
+---------------------------------------------*/
+#copyright .page_box {
+  padding-bottom: 10px;
+}
+#copyright .page_box li {
+  margin-bottom: 10px;
+}
+/*---------------------------------------------
+font
+---------------------------------------------*/
+.rome .page_box_ttl {
+  color: #ab4545;
+}
+.jp .page_box_ttl {
+  color: #3c72ab;
+}
+.rome.page_box {
+  background: #fff1f1;
+}
+.jp.page_box {
+  background: #ebeff9;
+}
