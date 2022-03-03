@@ -28,25 +28,26 @@
 
     <div id="mv">
       <h1 class="mv_txt">乗算</h1>
-      <p class="mv_txt-lead">まずはここを抑えよう！</p>
+      <p class="mv_txt-lead">乗算の使い方を実例で紹介</p>
     </div>
 
     <div class="wrap">
 
       <div id="contents">
-        <figure class="page_mv"><img src="../img/layout/mv.jpg" alt="page_main"></figure>
+        <figure class="page_mv"><img src="./img/mv.jpg" alt="page_main"></figure>
         <div class="page_date">
-          <time itemprop="dateModified" content="2022/2/7">2022/2/7</time>
+          <time itemprop="dateModified" content="2022/2/7">2022/3/3</time>
         </div>
         <div class="page_index">
           <p class="page_index_ttl">目次</p>
           <ul class="page_index_list">
-            <li class="page_index_item"><a href="#section1">1、レイアウトの４大原則</a></li>
-            <li class="page_index_item"><a href="#section2">2、近接</a></li>
-            <li class="page_index_item"><a href="#section3">3、整列</a></li>
-            <li class="page_index_item"><a href="#section4">4、コントラスト（強弱）</a></li>
-            <li class="page_index_item"><a href="#section5">5、反復</a></li>
-            <li class="page_index_item"><a href="#section6">6、まとめ</a></li>
+            <li class="page_index_item"><a href="#section1">1、乗算のポイント</a></li>
+            <li class="page_index_item"><a href="#section2">2、【例&#9312;】真っ黒の被写体の白背景にのみ色入れる</a></li>
+            <li class="page_index_item"><a href="#section3">3、【例&#9313;】白いものに色を加える</a></li>
+            <li class="page_index_item"><a href="#section4">4、【例&#9314;】テクスチャを反映させる</a></li>
+            <li class="page_index_item"><a href="#section5">5、【例&#9315;】線が黒いイラストを配置する</a></li>
+            <li class="page_index_item"><a href="#section6">6、【例&#9316;】周辺光量を補正する</a></li>
+            <li class="page_index_item"><a href="#section7">7、まとめ</a></li>
           </ul>
         </div>
         <section class="page_section" id="section1">
@@ -55,26 +56,33 @@
             描画モードのひとつ、「乗算」を見ていきます。<br>
             乗算のポイントは以下の2点。
           </p>
-          <ul class="page_box">
+          <ul class="page_box point">
             <li>&#9312;黒は残って白は消える<br class="dNoPc">（影が残って光が消えるイメージ）</li>
             <li>&#9313;他は混ざって暗くなる</li>
           </ul>
           <p class="page_txt">
-            細かな原理の部分は割愛します。実際に使用例を見ていきましょう。
+            詳しい原理を一旦置いておいて、すごく簡単にいうとこんなイメージです。
+            実際に使用例を見ていきましょう。
           </p>
         </section>
         <section class="page_section" id="section2">
           <h2 class="page_ttl">2、【例&#9312;】真っ黒の被写体の白背景にのみ色入れる</h2>
           <p class="page_txt">
-            細かな原理の部分は割愛します。実際に使用例を見ていきましょう。
+            基本色のレイヤーはこちら。<span class="color">下</span>に重ねます。
           </p>
-          <p class="page_txt">基本色のレイヤーはこちら</p>
           <figure class="page_figure"><img src="./img/img1.jpg" alt=""></figure>
-          <p class="page_txt">合成色のレイヤーはこちら</p>
+          <p class="page_txt">
+            合成色のレイヤーはこちら。<span class="color">上</span>に重ね、乗算をかけます。
+          </p>
           <figure class="page_figure"><img src="./img/img2.jpg" alt=""></figure>
-          <p class="page_txt">結果ははこちら</p>
+          <p class="page_txt">
+            結果ははこちら。<br>
+            枝背景の白い部分が透過し、背景の空が反映されました。
+          </p>
           <figure class="page_figure"><img src="./img/img3.jpg" alt=""></figure>
-          <p class="page_txt">合成色のレイヤーを上に置き、乗算をかけます。</p>
+          <p class="page_txt">
+            Photoshop内のレイヤーの様子はこちら。
+          </p>
           <figure class="page_figure"><img src="./img/img4.jpg" alt=""></figure>
           <p class="page_txt">
             グレー部分に色は入ってしまうので、白黒写真はうまくいきません。
@@ -83,42 +91,92 @@
         </section>
         <section class="page_section" id="section3">
           <h2 class="page_ttl">3、【例&#9313;】白いものに色を加える</h2>
-          <p class="page_txt">基本色のレイヤーはこちら</p>
+          <p class="page_txt">基本色のレイヤーはこちら。</p>
           <figure class="page_figure"><img src="./img/img5.jpg" alt=""></figure>
-          <p class="page_txt">色を付けたい部分だけ切り抜きます</p>
+          <p class="page_txt">色を付けたい部分だけ切り抜きます。今回はポットに色を反映させてみます。</p>
           <figure class="page_figure"><img src="./img/img6.jpg" alt=""></figure>
           <p class="page_txt">
-            今回はオレンジにしたいと思います。<br>
-            オレンジのべた塗りを乗算かけます。結果はこちら
+            ポットをオレンジにしてみましょう。<br>
+            オレンジのべた塗りレイヤーを作成し、切り抜きレイヤーにクリッピングマスクをし、乗算かけます。結果はこちら。
           </p>
           <figure class="page_figure"><img src="./img/img7.jpg" alt=""></figure>
-          <p class="page_txt">切り抜きレイヤーにだけ色をつけたいので、クリッピングマスクをして、乗算をかけます。
+          <p class="page_txt">
+            クリッピングマスクで、切り抜きレイヤーにだけ色を反映させることができます。<br>
+            影の部分も程よく合成されています。
           </p>
           <figure class="page_figure"><img src="./img/img8.jpg" alt=""></figure>
 
         </section>
         <section class="page_section" id="section4">
-          <h2 class="page_ttl">4、コントラスト（強弱）</h2>
-          <p class="page_txt">続けて3つ目の原則<span class="bold">「コントラスト」</span>を適用してみましょう。</p>
-          <figure class="page_figure"><img src="../img/layout/img4.png" alt=""></figure>
-          <p class="page_txt">タイトルのフォントを太字で大きく、文字とボタンをそれぞれ小さくしました。<br>
-            タイトルが強調されたので、パッと何の情報か分かりやすくなりました。全ての文章に目を通さなくても、<span class="color">一瞬で要点を掴める</span>ようになります。</p>
+          <h2 class="page_ttl">4、【例&#9314;】テクスチャを反映させる</h2>
+          <p class="page_txt">
+            文字にひび割れのテクスチャを反映させてみましょう。<br>
+            まず基本色レイヤーとなる文字を入力します。
+          </p>
+          <figure class="page_figure"><img src="./img/img4-1.jpg" alt=""></figure>
+          <p class="page_txt">
+            上に合成色となる、ひび割れのレイヤーをのせます。<br>
+            <span class="bold">背景が白地、テクスチャ部分が黒のもの</span>を選びます。<br>
+            文字レイヤーにクリッピングマスクし、乗算をかけます。
+          </p>
+          <figure class="page_figure"><img src="./img/img4-2.jpg" alt=""></figure>
+          <p class="page_txt">
+          </p>
+          <p class="page_txt">
+            結果はこちら。
+          </p>
+          <figure class="page_figure"><img src="./img/img4-3.jpg" alt=""></figure>
+          <p class="page_txt">
+            Photoshop内のレイヤーの様子はこちら。<br>
+            背景の白が透過し、黒のテクスチャの部分のみが反映されました。
+          </p>
+          <figure class="page_figure"><img src="./img/img4-4.jpg" alt=""></figure>
         </section>
         <section class="page_section" id="section5">
-          <h2 class="page_ttl">5、反復</h2>
-          <p class="page_txt">最後に4つ目の原則<span class="bold">「反復」</span>を適用してみましょう。<br>反復とは<span
-              class="color">要素ごとに決まったデザインを繰り返すこと</span>です。</p>
-          <figure class="page_figure"><img src="../img/layout/img5.png" alt=""></figure>
-          <p class="page_txt">一緒にイメージも追加し、さらに視覚的に情報を把握しやすくなりました。<br>(画像自体ももう少し統一感があると更に統一感が出ますが...)<br>
-            タイトルにはアンダーラインを、ボタンの背景や文字色などのデザインも統一しました。<br>
-            同じデザインを繰り返し適用すことで、何の情報か<span class="color">文章を読む前に感覚的に理解</span>することができます。
+          <h2 class="page_ttl">5、【例&#9315;】線が黒いイラストを配置する</h2>
+          <p class="page_txt">
+            背景が透過していないイラストも白背景で黒い線であれば、乗算で簡単に入れ込む事ができます。<br>
           </p>
+          <figure class="page_figure"><img src="./img/img5-1.jpg" alt=""></figure>
+          <p class="page_txt">
+            イラストをいれたい写真の上に、イラストのレイヤーを重ねます。<br>
+            イラストレイヤーに乗算をかけます。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-2.jpg" alt=""></figure>
+          <p class="page_txt">
+            結果はこちら。<br>
+            簡単に背景を透過してくれました。<br>
+            ちなみに、カラフルなイラストでも背景が白に近ければ比較的自然に合成できます。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-3.jpg" alt=""></figure>
         </section>
         <section class="page_section" id="section6">
-          <h2 class="page_ttl">6、まとめ</h2>
-          <p class="page_txt">以上、今回は<span class="bold">「近接」「整列」「コントラスト（強弱）」「反復」</span>をご紹介しました。<br>
-            たったこれだけ知っているだけで、一気に素人っぽさから脱出できます！<br>
-            自分のデザインが、何か見づらいなと思ったら、この4つの原則を思い出して、見直してみてくださいね！
+          <h2 class="page_ttl">6、【例&#9316;】周辺光量を補正する</h2>
+          <p class="page_txt">
+            写真の周辺の光量を落とし、レトロに加工してみます。<br>
+            元の写真はこちら。
+          </p>
+          <figure class="page_figure"><img src="./img/img6-1.jpg" alt=""></figure>
+          <p class="page_txt">
+            合成色のレイヤーを作成します。
+            新規でレイヤーを作成し、グラデーションツールで中心から周辺に向けて黒くなるグラデーションを作成します。
+          </p>
+          <figure class="page_figure"><img src="./img/img6-2.jpg" alt=""></figure>
+          <p class="page_txt">
+            グラデーションのレイヤーを写真の上にもってきて、乗算をかけます。<br>
+            結果はこちら。
+          </p>
+          <figure class="page_figure"><img src="./img/img6-3.jpg" alt=""></figure>
+          <p class="page_txt">
+            被写体が際立つような雰囲気のある写真加工が一瞬でできました。<br>
+            影が濃すぎると思ったら、グラデーションのレイヤーの不透明度を少し下げると、自然に馴染みます。
+          </p>
+        </section>
+        <section class="page_section" id="section7">
+          <h2 class="page_ttl">7、まとめ</h2>
+          <p class="page_txt">
+            乗算の簡単な実用例をみていきました。<br>
+            次は乗算の逆、スクリーンを見ていきます！
           </p>
         </section>
 

@@ -334,6 +334,22 @@ h4.page_ttl-sub2 {
 .page_box li:last-child {
   margin-bottom: 15px;
 }
+.page_box.point {
+  background: #fef4f4;
+  border: 1px solid #000;
+  position: relative;
+}
+.page_box.point::before {
+  content: 'point';
+  position: absolute;
+  top: -15px;
+  left: -1px;
+  background: #ff6f6f;
+  color: #fff;
+  padding: 1px 10px 2px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
 span.color {
   color: #ff6f6f;
   font-weight: bold;
@@ -402,6 +418,10 @@ span.mkBL {
   }
   .page_box li:last-child {
     margin-bottom: 30px;
+  }
+  .page_box.point::before {
+    top: -10px;
+    left: -5px;
   }
 }
 @media screen and (max-width: 766px) {
