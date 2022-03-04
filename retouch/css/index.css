@@ -4,77 +4,15 @@
 mv
 ---------------------------------------------*/
 #mv {
-  background: #3b9a9c;
+  background: #398AB9;
 }
-.mv_txt {
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-  padding: 30px 0;
-}
-.mv_txt-lead {
-  text-align: center;
-  color: #fff;
-  padding-bottom: 30px;
-  line-height: 1.5;
-  font-weight: bold;
-  font-size: 14px;
-}
-@media screen and (min-width: 767px) {
-  .mv_txt {
-    font-size: 28px;
-  }
-  .mv_txt-lead {
-    font-size: 16px;
-  }
+.page_index_ttl {
+  background: #398AB9;
 }
 
-#all {
-  background: #f5f0f4;
+h2.page_ttl::before {
+  background: #398AB9;
 }
-
-.tab li {
-  background: #fff;
-  padding: 10px;
-  border-radius: 7px;
-  width: calc((100% / 3) - 10px);
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  font-weight: bold;
-}
-
-.list-item {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.item {
-  background: #fff;
-  width: calc((100% / 2) - 6px);
-  padding: 10px;
-  margin-bottom: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-}
-.item a {
-  display: block;
-}
-.item-ttl {
-  font-weight: bold;
-  margin: 10px 0;
-}
-.item-txt {
-  line-height: 1.6;
-  font-size: 12px;
-  margin: 10px 0;
-}
-@media screen and (min-width: 767px) {
-  .item {
-    width: calc((100% / 2) - 10px);
-    margin-bottom: 30px;
-  }
-  .item-txt {
-    font-size: 14px;
-  }
+h3.page_ttl-sub::before {
+  background: #398AB9;
 }
