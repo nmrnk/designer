@@ -35,9 +35,16 @@ a:hover .item-figure img {
   height: 100%;
   color: #fff;
   position: absolute;
-  padding: 10px;
+  padding: 7px;
+  font-size: 12px;
   top: 0;
   left: 0;
+}
+@media screen and (min-width: 768px){
+  .soon::before{
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 /*---------------------------------------------
 1 header
@@ -140,9 +147,7 @@ img {
 #contents {
   max-width: 800px;
 }
-.tab li a {
-  display: block;
-}
+
 @media screen and (min-width: 769px) {
   #contents {
   }
@@ -152,6 +157,7 @@ img {
     align-items: flex-start;
     margin: 70px auto;
   }
+  
 }
 
 /*---------------------------------------------
