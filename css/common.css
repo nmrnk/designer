@@ -40,8 +40,8 @@ a:hover .item-figure img {
   top: 0;
   left: 0;
 }
-@media screen and (min-width: 768px){
-  .soon::before{
+@media screen and (min-width: 768px) {
+  .soon::before {
     font-size: 16px;
     padding: 10px;
   }
@@ -150,6 +150,7 @@ img {
 
 @media screen and (min-width: 769px) {
   #contents {
+    width: 100%;
   }
   .wrap {
     display: flex;
@@ -157,7 +158,6 @@ img {
     align-items: flex-start;
     margin: 70px auto;
   }
-  
 }
 
 /*---------------------------------------------
@@ -235,6 +235,9 @@ page
 #mv {
   background: #3b9a9c;
 }
+.page_mv {
+  border: 1px solid #ebebeb;
+}
 .mv_txt {
   font-size: 20px;
   text-align: center;
@@ -276,14 +279,18 @@ page
 .list-item {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
+  width: calc(100% + 6px);
+  margin: 0 -3px;
 }
 .item {
+  max-width: calc(((100% / 12) * 6) - 6px);
+  flex-basis: calc(((100% / 12) * 6) - 6px);
+  margin: 0 3px 20px;
   background: #fff;
   width: calc((100% / 2) - 6px);
   padding: 10px;
-  margin-bottom: 20px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
 .item a {
@@ -299,15 +306,19 @@ page
   margin: 10px 0;
 }
 @media screen and (min-width: 767px) {
+  .list-item {
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+  }
   .item {
-    width: calc((100% / 2) - 10px);
-    margin-bottom: 30px;
+    max-width: calc(((100% / 12) * 4) - 20px);
+    flex-basis: calc(((100% / 12) * 4) - 20px);
+    margin: 0 10px 10px;
   }
   .item-txt {
     font-size: 14px;
   }
 }
-
 
 .page #contents {
   background: #fff;

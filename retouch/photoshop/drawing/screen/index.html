@@ -37,22 +37,22 @@
       <div id="contents">
         <figure class="page_mv"><img src="./img/mv.jpg" alt="page_main"></figure>
         <div class="page_date">
-          <time itemprop="dateModified" content="2022/2/7">2022/3/7</time>
+          <time itemprop="dateModified" content="2022/2/7">2022/3/10</time>
         </div>
         <div class="page_index">
           <p class="page_index_ttl">目次</p>
           <ul class="page_index_list">
             <li class="page_index_item"><a href="#section1">1、スクリーンのポイント</a></li>
-            <li class="page_index_item"><a href="#section2">2、【例&#9312;】真っ黒の被写体の白背景にのみ色入れる</a></li>
-            <li class="page_index_item"><a href="#section3">3、【例&#9313;】白いものに色を加える</a></li>
-            <li class="page_index_item"><a href="#section4">4、【例&#9314;】テクスチャを反映させる</a></li>
-            <li class="page_index_item"><a href="#section5">5、【例&#9315;】線が黒いイラストを配置する</a></li>
-            <li class="page_index_item"><a href="#section6">6、【例&#9316;】周辺光量を補正する</a></li>
+            <li class="page_index_item"><a href="#section2">2、【例&#9312;】真っ黒の被写体に色を入れる</a></li>
+            <li class="page_index_item"><a href="#section3">3、【例&#9313;】湯気や煙の合成</a></li>
+            <li class="page_index_item"><a href="#section4">4、【例&#9314;】花火を合成する</a></li>
+            <li class="page_index_item"><a href="#section5">5、【例&#9315;】空に雲を追加する</a></li>
+            <li class="page_index_item"><a href="#section6">6、【例&#9316;】多重露光</a></li>
             <li class="page_index_item"><a href="#section7">7、まとめ</a></li>
           </ul>
         </div>
         <section class="page_section" id="section1">
-          <h2 class="page_ttl">1、乗算のポイント</h2>
+          <h2 class="page_ttl">1、スクリーンのポイント</h2>
           <p class="page_txt">
             描画モードのひとつ、「スクリーン」を見ていきます。<br>
             スクリーンのポイントは以下の2点。
@@ -140,54 +140,63 @@
           <p class="page_txt">
             以下の写真に雲を追加してみましょう。<br>
           </p>
-          <figure class="page_figure"><img src="./img/img5-1.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img4-1.jpg" alt=""></figure>
+          <p class="page_txt">
+            合成する雲の写真はこちら。
+          </p>
+          <figure class="page_figure"><img src="./img/img4-2.jpg" alt=""></figure>
           <p class="page_txt">
             まず合成する雲を白黒にし、コントラストを上げて白と黒をはっきりさせていきましょう。<br>
-            方法は色々ありますが、今回は覆い焼きツールと焼きこみツールを使います。<br>
+            今回は覆い焼きツールと焼きこみツールを使います。
+            まずは雲の写真レイヤーを選択し、「イメージ」 ＞ 「色調補正」 ＞ 「色相・彩度」を選択し、彩度をマックスで下げます。<br>
           </p>
-          <figure class="page_figure"><img src="./img/img5-2.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img4-3.jpg" alt=""></figure>
           <p class="page_txt">
-            まずは雲の写真レイヤーを選択し、イメージ＞色調補正＞色相・彩度を選択し、彩度をマックスで下げます。<br>
+            焼きこみツールを選択し、「範囲：シャドウ」を選択し、雲の周辺の黒い部分をポンポンと叩いて、影を濃くして行きます。
           </p>
-          <figure class="page_figure"><img src="./img/img5-3.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img4-4.jpg" alt=""></figure>
           <p class="page_txt">
-            焼きこみツールを選択し、「範囲：シャドウ」を選択し、雲の周辺の黒い部分をなぞって影を濃くして行きます。
+            影を濃くした写真を上に重ね、スクリーンをかけます。
           </p>
-          <figure class="page_figure"><img src="./img/img5-4.jpg" alt=""></figure>
-          <figure class="page_figure"><img src="./img/img5-5.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img4-5.jpg" alt=""></figure>
           <p class="page_txt">
-            覆い焼きツールを選択し、「範囲：ハイライト」を選択し、雲の部分をなぞって雲の白を濃くして行きます。
+            お花と雲が被ってしまった部分があるので、雲のレイヤーにマスクをかけ、お花の部分に沿ってブラシで丁寧になぞって行きます。
           </p>
-          <figure class="page_figure"><img src="./img/img5-6.jpg" alt=""></figure>
-          <figure class="page_figure"><img src="./img/img5-7.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img4-6.jpg" alt=""></figure>
           <p class="page_txt">
-            コントラストを強くした雲の写真を上にのせ、オーバーレイをかけていきます。
+            結果はこちら。雲の透明度を少し落とし、お花と自然になじむように調整しました。
           </p>
-          <figure class="page_figure"><img src="./img/img5-8.jpg" alt=""></figure>
-          <p class="page_txt">
-            結果はこちら。下の空の青に自然になじませることができました。
-          </p>
-          <figure class="page_figure"><img src="./img/img5-9.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img4-7.jpg" alt=""></figure>
         </section>
         <section class="page_section" id="section6">
           <h2 class="page_ttl">6、【例&#9316;】多重露光</h2>
           <p class="page_txt">
-            1角写真に別の写真を溶け込ませたような幻想的な効果を作ることができます。<br>
-            こちらの動物に背景の写真を溶け込ませたいと思います。
+            1枚の写真に別の写真を溶け込ませたような幻想的な効果を作ることができます。<br>
+            こちらの女性の写真に背景を合成したいと思います。
           </p>
-          <figure class="page_figure"><img src="./img/img6-1.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img5-1.jpg" alt=""></figure>
           <p class="page_txt">
-            雲の合成でやったように、動物の写真を白黒写真にしていきましょう。<br>
-            イメージ＞色調補正＞色相・彩度を選択し、彩度をマックスで下げます。
+            女性にだけ背景を合成したいので、人物の部分のみ切り抜きます。
           </p>
-          <figure class="page_figure"><img src="./img/img6-2.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img5-2.jpg" alt=""></figure>
           <p class="page_txt">
-            上に背景の写真を重ねて、スクリーンをかけます。結果はこちら。
+            雲の合成でやったように、女性の写真を白黒写真にしていきましょう。<br>
+            「イメージ」 ＞ 「色調補正」 ＞ 「色相・彩度」を選択し、彩度をマックスで下げます。
           </p>
-          <figure class="page_figure"><img src="./img/img6-3.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img5-3.jpg" alt=""></figure>
+          <p class="page_txt">
+            重ねる背景はこちら、上にのせてクリッピングマスクをし、スクリーンをかけます。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-4.jpg" alt=""></figure>
+          <figure class="page_figure"><img src="./img/img5-5.jpg" alt=""></figure>
+          <p class="page_txt">
+            結果はこちら。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-6.jpg" alt=""></figure>
           <p class="page_txt">
             白キャンバスに鉛筆でデッサンして、その鉛筆の部分に色が入るイメージです。
-            鉛筆は真っ黒ではないので、グレーの部分に色入っていきます。
+            鉛筆は真っ黒ではないので、グレーの部分に色入っていきます。<br>
+            洋服の白い部分には色が入ってないのがわかります。
           </p>
         </section>
         <section class="page_section" id="section7">
