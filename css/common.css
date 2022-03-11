@@ -16,6 +16,7 @@ body {
 }
 .item-figure {
   overflow: hidden;
+  border: 1px solid #ececec;
 }
 .item-figure img {
   transition: 0.2s ease;
@@ -106,13 +107,13 @@ a.header_logo {
   margin: 0 auto;
 }
 .bread_item a {
-  font-size: 12px;
+  font-size: 11px;
 }
 .bread_item a.active {
   font-weight: bold;
 }
 .bread_item {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .bread_item:not(:last-child)::after {
   content: '';
@@ -239,7 +240,7 @@ page
   border: 1px solid #ebebeb;
 }
 .mv_txt {
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
   color: #fff;
   font-weight: bold;
@@ -255,7 +256,7 @@ page
 }
 @media screen and (min-width: 767px) {
   .mv_txt {
-    font-size: 28px;
+    font-size: 30px;
   }
   .mv_txt-lead {
     font-size: 16px;
