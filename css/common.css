@@ -130,6 +130,9 @@ a.header_logo {
   .bread_item a {
     font-size: 14px;
   }
+  .bread_item {
+    margin-right: 10px;
+  }
 }
 /*---------------------------------------------
 1 common
