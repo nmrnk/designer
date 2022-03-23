@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN" />
+
+  <link rel="stylesheet" href="//nmrnk.github.io/photoarts/css/destyle.css">
+  <link rel="stylesheet" href="../../../../css/common.css">
+  <link rel="stylesheet" href="../../../css/index.css">
+  <title>解像度について｜Photo arts</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-222696495-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-222696495-1');
+  </script>
+</head>
+
+<body>
+  <div id="all" class="page">
+    <iframe src="//nmrnk.github.io/photoarts/parts/header2.html" id="header"></iframe>
+    <div class="bread_clumb">
+      <ul class="bread_list">
+        <li class="bread_item"><a href="//nmrnk.github.io/photoarts/">ホーム</a></li>
+        <li class="bread_item"><a href="//nmrnk.github.io/photoarts/retouch/">レタッチ</a></li>
+        <li class="bread_item"><a href="//nmrnk.github.io/photoarts/retouch/photoshop/">Photoshop基礎</a></li>
+        <li class="bread_item"><a href="//nmrnk.github.io/photoarts/retouch/photoshop/image_color/">画像とカラー基本</a></li>
+        <li class="bread_item"><a class="active">解像度について</a></li>
+      </ul>
+    </div>
+
+    <div id="mv">
+      <h1 class="mv_txt">解像度について</h1>
+      <p class="mv_txt-lead">画面と画像とピクセルの関係</p>
+    </div>
+
+    <div class="wrap">
+
+      <div id="contents">
+        <figure class="page_mv"><img src="./img/mv.jpg" alt="page_main"></figure>
+        <div class="page_date">
+          <time itemprop="dateModified" content="2022/3/20">2022/3/20</time>
+        </div>
+        <div class="page_index">
+          <p class="page_index_ttl">目次</p>
+          <ul class="page_index_list">
+            <li class="page_index_item"><a href="#section1">1、はじめに</a></li>
+            <li class="page_index_item"><a href="#section2">2、ピクセル（画素）</a></li>
+            <li class="page_index_item"><a href="#section3">3、解像度の二つの意味</a></li>
+            <li class="page_index_item"><a href="#section4">4、画面解像度</a></li>
+            <li class="page_index_item"><a href="#section5">5、画像解像度</a></li>
+            <li class="page_index_item"><a href="#section6">6、Retinaディスプレイ</a></li>
+            <li class="page_index_item"><a href="#section7">7、まとめ</a></li>
+          </ul>
+        </div>
+        <section class="page_section" id="section1">
+          <h2 class="page_ttl">1、はじめに</h2>
+          <p class="page_txt">
+            解像度って結局よくわからないという方向けに！<br>
+            わかりやすく、図を使って説明していきます。
+          </p>
+        </section>
+
+        <section class="page_section" id="section2">
+          <h2 class="page_ttl">2、ピクセル（画素）</h2>
+          <p class="page_txt">
+            解像度の前に、画像がどのようにできているか見ていきましょう。<br>
+            デジタル画像は色を持つたくさんの<span class="bold">正方形の集まり</span>でできています。<br>
+            画像にマックスで寄ったときに見えるその1マスを<span class="color">ピクセル（画素）</span>といいます。
+          </p>
+          <figure class="page_figure"><img src="./img/img1-1.jpg" alt=""></figure>
+          <p class="page_txt">
+            ピクセルの数が多いほど細部まで表現できるので画質はよくなります。
+          </p>
+          <figure class="page_figure"><img src="./img/img1-2.jpg" alt=""></figure>
+        </section>
+
+        <section class="page_section" id="section3">
+          <h2 class="page_ttl">3、解像度の二つの意味</h2>
+          <p class="page_txt">
+            解像度には以下の2種類意味があります。
+          </p>
+          <ul class="page_box point">
+            <li>&#9312;ディスプレイなど表示媒体のピクセルの数（ <span class="bold">画面解像度</span> ）</li>
+            <li>&#9313;画像のピクセルの大きさ（ <span class="bold">画像解像度</span> ）</li>
+          </ul>
+          <p class="page_txt">
+            web制作なので、紙は一旦置いておいて、便宜上&#9312;を<span class="color">画面解像度</span>、&#9313;を<span
+              class="color">画像解像度</span>と呼びたいと思います。
+          </p>
+        </section>
+
+        <section class="page_section" id="section4">
+          <h2 class="page_ttl">4、画面解像度（画面のピクセルの数）</h2>
+          <p class="page_txt">
+            モニターディスプレイや、スマホなど画面を想像してみてください。その画面が、一画面で何個ピクセルを表示できるかを示した数値が、<span class="bold">画面解像度</span>です。<br>
+            言い換えると、その画面にどのくらいの密度でピクセルが並んでいるかということです。<br>
+            その密度は、ディスプレイごとに異なります。<br>
+          <figure class="page_figure"><img src="./img/img4-1.jpg" alt=""></figure>
+          ここでポイントは、<span class="bold">ピクセルには決まった大きさがない</span>ということです。ディスプレイの画面の大きさ（インチ）と、密度（画面解像度）でピクセルの大きさがきまります。
+          </p>
+          <figure class="page_figure"><img src="./img/img4-2.jpg" alt=""></figure>
+        </section>
+
+        <section class="page_section" id="section5">
+          <h2 class="page_ttl">5、画像解像度</h2>
+          <p class="page_txt">
+            ①に対してこちらはピクセルの大きさを固定して比較します。<br>
+            いくつに固定するかというと、その大きさを決めるのが、<span class="color">ppi（px/inch）</span>です。
+            「PPI（ピーピーアイ）」とは、「pixel / inch（ピクセル・パー・インチ）」を略したもので、<br>
+            <span class="bold">1インチ（25.4mm）の中にいくつピクセルを入れるか</span>という意味になります。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-1.jpg" alt=""></figure>
+          <p class="page_txt">
+            ここで決まったピクセルの大きさを基準に、画像を作成して行きます。<br>
+            表示媒体によってこの基準はおおよそ決まっており、
+            webで使用する画像は一般的に<span class="color">72ppi</span>で作成します。（ピクセルの大きさは約0.35ミリ）<br>
+            紙媒体の場合は、350ppiなので、もっとピクセルが小さくなるということですね。<br>
+            photoshopの中の、高さと幅のピクセルは、固定したピクセルの大きさを基準に、
+            その作成した画像が表示先の媒体で、何pxで表示されるかを示します。
+          <figure class="page_figure"><img src="./img/img5-2.jpg" alt=""></figure>
+          （10pxの画像より100pxの画像の方が大きい）
+          photoshopで72ppiの大きさのピクセルで作成した画像も表示先のディスプレイのピクセルに大きさは沿って表示されるので、実際には何ppiで作成しても同じですが、慣習的に72ppiで作成します。<br>
+          <br>
+          ちなみにファイルの容量はピクセル数によるので、解像度が違っても、ピクセル数が同じなら変わりません。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-3.jpg" alt=""></figure>
+        </section>
+
+        <section class="page_section" id="section6">
+          <h2 class="page_ttl">6、Retinaディスプレイ</h2>
+          <p class="page_txt">
+            MacやiPhoneには「<span class="color">Retinaディスプレイ</span>」という高解像度のディスプレイが搭載されているものがあります。<br>
+            これは<span class="bold">通常の1ピクセルサイズに、4つのピクセルを収められる</span>ディスプレイのことです。<br>
+            この通常の1ピクセル表示サイズのものを、<span class="color">CSSピクセル（論理ピクセル）</span>、4分の1サイズになった、実際のピクセルを<span
+              class="color">デバイスピクセル（物理ピクセル）</span>といいます。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-1.jpg" alt=""></figure>
+          <p class="page_txt">
+            通常の1ピクセル分に4つのピクセルが入るということは、通常の4倍のピクセル数を持つ画像が必要になります。4倍ということは、<span
+              class="bold">幅や高さが2倍</span>のピクセル数が必要になり、この2という数字を<span class="color">デバイス・ピクセル比</span>といいます。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-2.jpg" alt=""></figure>
+          <p class="page_txt">
+            通常のディスプレイと同じサイズ（ピクセル数）の画像をRetinaディスプレイで表示すると、ピクセルが4分の3足りないので、その分引き伸ばされ、ボケてしまいます。
+          </p>
+          <figure class="page_figure"><img src="./img/img5-3.jpg" alt=""></figure>
+          <p class="page_txt">
+            iPhoneユーザーが多いので、スマートフォン用画像は約2倍で画像を書き出すようにしましょう。<br>
+            ただ、画像によっては1.5倍とかでも綺麗に表示されたりするので、容量が大きくなりすぎないあたりがベストと言えます。容量が大きい時はwebp対応にするのもおすすめです。サイトの読み込みが速くなります。
+          </p>
+        </section>
+        <section class="page_section" id="section7">
+          <h2 class="page_ttl">7、まとめ</h2>
+          <p class="page_txt">
+            以上解像度について説明しました。<br>
+            まとめると以下になります。
+          <ul class="page_box summary">
+            <li>&#9312;画像は<span class="color">ピクセル(画素)</span>の集まりで出来ている</li>
+            <li>&#9313;解像度は二つの意味がある<br>
+              <span class="indent">・<span class="color">画面解像度</span></span><br>
+              <span class="indent">・<span class="color">画像解像度</span></span>
+            </li>
+            <li>&#9314;画面解像度とは<span class="color">画面内のピクセルの密度</span></li>
+            <li>&#9315;画像解像度とは<span class="color">画像のピクセルの大きさ</span><br>
+              <span class="indent">・WEB用画像は一般的に<span class="color">72ppi</span></span>
+            </li>
+            <li>&#9316;Retinaディスプレイ(高解像度)用の画像はボケないよう<span class="color">約2倍</span>で書き出す</li>
+          </ul>
+          やや複雑ですが、画面解像度と画像解像度がわかれば徐々に理解できると思います！
+          </p>
+        </section>
+
+      </div>
+
+
+      <iframe src="../../../../parts/side.html" id="side"></iframe>
+    </div>
+
+    <iframe src="//nmrnk.github.io/photoarts/parts/footer.html" id="footer"></iframe>
+  </div>
+
+  <script src="../../../../js/index.js"></script>
+</body>
+
+</html>
