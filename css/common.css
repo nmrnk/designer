@@ -170,7 +170,7 @@ img {
 #side {
   background: #fff;
   width: 100%;
-  min-height: 640px;
+  min-height: 300px;
 }
 .side_box {
   padding: 10px;
@@ -380,6 +380,10 @@ h2.page_ttl {
   font-weight: bold;
   position: relative;
 }
+h2.page_ttl span {
+  font-size: 0.8em;
+  margin-left: 15px;
+}
 h2.page_ttl::before {
   content: '';
   display: inline-block;
@@ -433,7 +437,8 @@ h4.page_ttl-sub2 {
 .page_box li:last-child {
   margin-bottom: 15px;
 }
-.page_box.point {
+.page_box.point,
+.page_box.summary {
   background: #fef4f4;
   border: 1px solid #000;
   position: relative;
@@ -449,11 +454,31 @@ h4.page_ttl-sub2 {
   font-weight: bold;
   letter-spacing: 0.06em;
 }
+.page_box.summary::before {
+  content: 'まとめ';
+  position: absolute;
+  top: -15px;
+  left: -1px;
+  background: #ff6f6f;
+  color: #fff;
+  padding: 1px 10px 2px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+.page_box li span.indent {
+  margin-left: 20px;
+}
+.page_box.summary li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
 span.color {
-  color: #ff6f6f;
+  /* color: #ff6f6f; */
+  background: linear-gradient(rgba(255, 255, 255, 0) 70%, #fea8a8 70%);
+  /* border-bottom: 5px solid #fe9494; */
   font-weight: bold;
 }
-p span.bold {
+span.bold {
   font-weight: bold;
 }
 .list {
