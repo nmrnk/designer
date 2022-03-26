@@ -37,7 +37,7 @@ a:hover .item-figure img {
   color: #fff;
   position: absolute;
   padding: 7px;
-  font-size: 12px;
+  font-size: 11px;
   top: 0;
   left: 0;
 }
@@ -103,6 +103,9 @@ a.header_logo {
 }
 .bread_list {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
   max-width: 1100px;
   margin: 0 auto;
 }
